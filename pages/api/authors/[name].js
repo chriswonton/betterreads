@@ -4,7 +4,7 @@ import { promises as fs } from 'fs'
 export default async function handler(req, res) {
     // get the path that was entered that includes the title
     const { name } = req.query;
-
+    
     // get the path to the json directory
     const jsonDirectory = path.join(process.cwd(), 'json');
     // read in components from our json file
